@@ -44,7 +44,7 @@ func main() {
 		currentTime := time.Now().Format("2006-01-02 15:04:05")
 		c.JSON(http.StatusOK, gin.H{
 			"statusCode": 200,
-			"Status":     "up",
+			"status":     "up",
 			"currentTime": currentTime,
 			"message":    "Health check OK!",
 		})
